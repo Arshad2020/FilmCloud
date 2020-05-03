@@ -9,7 +9,7 @@ function Home(props) {
   const { path } = useRouteMatch();
 
   const url =
-    "http://api.themoviedb.org/3/movie/popular?api_key=03d2fe94d662e5523e71720a226900bb";
+    "https://api.themoviedb.org/3/movie/popular?api_key=03d2fe94d662e5523e71720a226900bb";
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
