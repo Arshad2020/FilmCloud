@@ -41,7 +41,7 @@ function RentList({ handleRemove, emptyRentList }) {
   if (isSubmited) {
     return <h1>Empty</h1>;
   }
-  console.log(isSubmited);
+
   return (
     <div className="rent-list-page">
       <h1 className="rent-list-title">Check Out</h1>
