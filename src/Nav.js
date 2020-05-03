@@ -35,7 +35,6 @@ function Nav(props) {
           <Link style={{ textDecoration: "none" }} to="/rentlist">
             <li>Rentlist</li>
           </Link>
-
           {props.isLogedIn ? (
             <Link
               className="user-div"

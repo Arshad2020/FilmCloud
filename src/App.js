@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Switch, Route, useHistory } from "react-router-dom";
+import {
+  Switch,
+  Route,
+  useHistory,
+  useRouteMatch,
+  Redirect,
+  useLocation,
+} from "react-router-dom";
 import RentList from "./RentList";
 import Home from "./Home";
 import Nav from "./Nav";
@@ -15,7 +22,9 @@ function App() {
   const [rentItems, setRentItems] = useState(storedData);
   const [isLogedIn, setIsLogedIn] = useState(false);
   const [user, setUser] = useState({});
-
+  const { url, path } = useRouteMatch();
+  const location = useLocation();
+  console.log(url, path, location);
   function addToRentList(newItem) {
     if (isLogedIn) {
       setRentItems((prevItem) => {
@@ -55,6 +64,17 @@ function App() {
       .then(() => history.push("/searchmovies"))
       .then(setSearchTerm(""));
   };
+  if (location.pathname === "/FilmCloud") {
+    console.log(path, url, "home");
+    return (
+      <Redirect
+        to={{
+          pathname: "/home",
+        }}
+      />
+    );
+  }
+
   return (
     <div>
       <Nav
