@@ -62,15 +62,15 @@ function App() {
       .then(() => history.push("/searchmovies"))
       .then(setSearchTerm(""));
   };
-  if (location.pathname === "/FilmCloud") {
-    return (
-      <Redirect
-        to={{
-          pathname: "/home",
-        }}
-      />
-    );
-  }
+  // if (location.pathname === "/FilmCloud") {
+  //   return (
+  //     <Redirect
+  //       to={{
+  //         pathname: "/home",
+  //       }}
+  //     />
+  //   );
+  // }
 
   return (
     <div>
