@@ -24,7 +24,7 @@ function App() {
   const [user, setUser] = useState({});
   const { url, path } = useRouteMatch();
   const location = useLocation();
-  console.log(url, path, location);
+
   function addToRentList(newItem) {
     if (isLogedIn) {
       setRentItems((prevItem) => {
@@ -65,7 +65,6 @@ function App() {
       .then(setSearchTerm(""));
   };
   if (location.pathname === "/FilmCloud") {
-    console.log(path, url, "home");
     return (
       <Redirect
         to={{
