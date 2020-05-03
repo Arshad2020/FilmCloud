@@ -3,7 +3,6 @@ import {
   Switch,
   Route,
   useHistory,
-  useRouteMatch,
   Redirect,
   useLocation,
 } from "react-router-dom";
@@ -22,7 +21,6 @@ function App() {
   const [rentItems, setRentItems] = useState(storedData);
   const [isLogedIn, setIsLogedIn] = useState(false);
   const [user, setUser] = useState({});
-  const { url, path } = useRouteMatch();
   const location = useLocation();
 
   function addToRentList(newItem) {
