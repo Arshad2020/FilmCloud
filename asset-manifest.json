@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FilmCloud/static/css/main.281a52bc.chunk.css",
-    "main.js": "/FilmCloud/static/js/main.dd9e355f.chunk.js",
-    "main.js.map": "/FilmCloud/static/js/main.dd9e355f.chunk.js.map",
+    "main.js": "/FilmCloud/static/js/main.4fb76aa7.chunk.js",
+    "main.js.map": "/FilmCloud/static/js/main.4fb76aa7.chunk.js.map",
     "runtime-main.js": "/FilmCloud/static/js/runtime-main.d17c1844.js",
     "runtime-main.js.map": "/FilmCloud/static/js/runtime-main.d17c1844.js.map",
     "static/js/2.791078da.chunk.js": "/FilmCloud/static/js/2.791078da.chunk.js",
     "static/js/2.791078da.chunk.js.map": "/FilmCloud/static/js/2.791078da.chunk.js.map",
     "index.html": "/FilmCloud/index.html",
-    "precache-manifest.b1701afa818f2ce4e47f5e6956c367f7.js": "/FilmCloud/precache-manifest.b1701afa818f2ce4e47f5e6956c367f7.js",
+    "precache-manifest.938e393d1503e7d622b8ecb98bf05c8e.js": "/FilmCloud/precache-manifest.938e393d1503e7d622b8ecb98bf05c8e.js",
     "service-worker.js": "/FilmCloud/service-worker.js",
     "static/css/main.281a52bc.chunk.css.map": "/FilmCloud/static/css/main.281a52bc.chunk.css.map",
     "static/js/2.791078da.chunk.js.LICENSE.txt": "/FilmCloud/static/js/2.791078da.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.d17c1844.js",
     "static/js/2.791078da.chunk.js",
     "static/css/main.281a52bc.chunk.css",
-    "static/js/main.dd9e355f.chunk.js"
+    "static/js/main.4fb76aa7.chunk.js"
   ]
 }
