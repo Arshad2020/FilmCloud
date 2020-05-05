@@ -1,6 +1,6 @@
 {
-  "homepage": "https://arshad2020.github.io/home",
-  "name": "film-cloud",
+  "homepage": "https://arshad2020.github.io/filmcloud",
+  "name": "filmcloud",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

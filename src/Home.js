@@ -7,7 +7,6 @@ import { Switch, Route, useRouteMatch } from "react-router-dom";
 function Home(props) {
   const [allMovies, setAllMovies] = useState([]);
   const { path } = useRouteMatch();
-
   const url =
     "https://api.themoviedb.org/3/movie/popular?api_key=03d2fe94d662e5523e71720a226900bb";
   useEffect(() => {
