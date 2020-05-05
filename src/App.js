@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Switch,
-  Route,
-  useHistory,
-  Redirect,
-  useLocation,
-} from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import RentList from "./RentList";
 import Home from "./Home";
 import Nav from "./Nav";
@@ -21,7 +15,6 @@ function App() {
   const [rentItems, setRentItems] = useState(storedData);
   const [isLogedIn, setIsLogedIn] = useState(false);
   const [user, setUser] = useState({});
-  const location = useLocation();
 
   function addToRentList(newItem) {
     if (isLogedIn) {
@@ -62,15 +55,6 @@ function App() {
       .then(() => history.push("/searchmovies"))
       .then(setSearchTerm(""));
   };
-  // if (location.pathname === "/FilmCloud") {
-  //   return (
-  //     <Redirect
-  //       to={{
-  //         pathname: "/home",
-  //       }}
-  //     />
-  //   );
-  // }
 
   return (
     <div>
@@ -82,6 +66,7 @@ function App() {
         setIsLogedIn={setIsLogedIn}
         user={user}
       />
+
       <Switch>
         <Route path="/home">
           <Home addItem={addToRentList} />
